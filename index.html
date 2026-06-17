@@ -3,19 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sleep Better Daily</title>
+  <title>Sleep Better Daily: Evidence-Based Sleep & Recovery Science</title>
+  <meta name="description" content="Sleep Better Daily publishes evidence-based education on sleep physiology, recovery science, and mineral deficiencies that disrupt rest, including magnesium's role in nervous system regulation.">
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    h1 { color: #2c5f8a; }
-    .post { border-bottom: 1px solid #eee; padding: 20px 0; }
-    .post a { font-size: 1.2em; color: #2c5f8a; text-decoration: none; }
-    .post a:hover { text-decoration: underline; }
+    :root {
+      --navy: #1f3a5f;
+      --navy-dark: #16293f;
+      --gold: #d4a13d;
+      --cream: #f0e9d8;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      color: var(--text);
+      line-height: 1.6;
+      background: #fff;
+    }
+    header {
+      background: var(--navy);
+      padding: 18px 20px;
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--cream);
+    }
+    .logo-link img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: block;
+    }
+    .logo-text {
+      font-size: 1.15em;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: var(--cream);
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 22px;
+    }
+    nav a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.95em;
+      opacity: 0.9;
+    }
+    nav a:hover { opacity: 1; text-decoration: underline; }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .hero {
+      padding: 50px 0 30px;
+      border-bottom: 1px solid #eee;
+    }
+    .hero h1 {
+      font-size: 2.1em;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 1.05em;
+      max-width: 620px;
+    }
+
+    section.about {
+      padding: 40px 0;
+      border-bottom: 1px solid #eee;
+    }
+    section.about h2 {
+      color: var(--navy);
+      font-size: 1.4em;
+      margin-bottom: 14px;
+    }
+    section.about p {
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    section.about .credentials {
+      background: #f7f5ef;
+      border-left: 3px solid var(--gold);
+      padding: 14px 18px;
+      margin-top: 18px;
+      font-size: 0.95em;
+      color: var(--muted);
+    }
+
+    .posts-section {
+      padding: 40px 0;
+    }
+    .posts-section h2 {
+      color: var(--navy);
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+    .post {
+      border-bottom: 1px solid #eee;
+      padding: 18px 0;
+    }
+    .post a {
+      font-size: 1.15em;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .post a:hover { text-decoration: underline; color: var(--gold); }
+
+    footer {
+      background: var(--navy-dark);
+      color: #b8c2cf;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.85em;
+    }
   </style>
 </head>
 <body>
-  <h1>Sleep Better Daily</h1>
-  <p>Science-backed sleep and recovery education.</p>
-  <div id="posts"><p>Loading posts...</p></div>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo-link" aria-label="Sleep Better Daily home">
+        <img src="https://cdn.jsdelivr.net/gh/7minerals/sleep-better-daily@main/assets/logo.png" alt="Sleep Better Daily logo">
+        <span class="logo-text">Sleep Better Daily</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#articles">Articles</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Evidence-Based Sleep & Recovery Science</h1>
+      <p>Clear, research-grounded education on sleep physiology, circadian regulation, and the mineral deficiencies (including magnesium) most commonly linked to disrupted rest.</p>
+    </div>
+
+    <section class="about" id="about">
+      <h2>About Sleep Better Daily</h2>
+      <p>Sleep Better Daily is a research-driven publication focused on the physiology of sleep and recovery. Our coverage centers on the mechanisms behind sleep onset, deep sleep architecture, cortisol regulation, and the nutritional factors, particularly magnesium, that influence nervous system activity and GABA receptor function during the body's wind-down process.</p>
+      <p>Each article is structured around current sleep science research and is reviewed for accuracy before publication. We do not publish anecdotal wellness trends without grounding them in physiological mechanism. If a claim is made about a supplement, mineral, or sleep practice, the underlying biological rationale is explained alongside it.</p>
+      <div class="credentials">
+        Content focus areas: sleep onset latency, circadian rhythm regulation, magnesium and nervous system function, cortisol and stress-sleep interaction, and recovery physiology. Sources are drawn from peer-reviewed sleep research and clinical nutrition literature.
+      </div>
+    </section>
+
+    <section class="posts-section" id="articles">
+      <h2>Latest Articles</h2>
+      <div id="posts"><p>Loading posts...</p></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Sleep Better Daily. Educational content only, not medical advice. Consult a healthcare provider before changing your sleep or supplement routine.
+  </footer>
+
   <script>
     fetch('https://api.github.com/repos/7minerals/sleep-better-daily/contents/tests')
       .then(r => r.json())
@@ -24,11 +185,12 @@
         const div = document.getElementById('posts');
         if (!posts.length) { div.innerHTML = '<p>Posts coming soon.</p>'; return; }
         div.innerHTML = posts.map(f => {
-          const title = f.name.replace('.html','').replace(/-/g,' ');
+          const title = f.name.replace('.html', '').replace(/-/g, ' ').replace(/_\d{4}-\d{2}-\d{2}T.*$/, '');
           return `<div class="post"><a href="tests/${f.name}">${title}</a></div>`;
         }).join('');
       })
       .catch(() => document.getElementById('posts').innerHTML = '<p>Posts coming soon.</p>');
   </script>
+
 </body>
 </html>
