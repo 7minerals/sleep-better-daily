@@ -142,7 +142,7 @@
   <header>
     <div class="header-inner">
       <a href="/" class="logo-link" aria-label="Sleep Better Daily home">
-        <img src="https://cdn.jsdelivr.net/gh/7minerals/sleep-better-daily@main/assets/logo.png" alt="Sleep Better Daily logo">
+        <img src="https://cdn.jsdelivr.net/gh/7minerals/sleep-better-daily@main/logo.png" alt="Sleep Better Daily logo">
         <span class="logo-text">Sleep Better Daily</span>
       </a>
       <nav>
@@ -185,7 +185,8 @@
         const div = document.getElementById('posts');
         if (!posts.length) { div.innerHTML = '<p>Posts coming soon.</p>'; return; }
         div.innerHTML = posts.map(f => {
-          const title = f.name.replace('.html', '').replace(/-/g, ' ').replace(/_\d{4}-\d{2}-\d{2}T.*$/, '');
+          const raw = f.name.replace('.html', '').replace(/-/g, ' ').replace(/_\d{4}-\d{2}-\d{2}T.*$/, '');
+          const title = raw.replace(/\w\S*/g, w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
           return `<div class="post"><a href="tests/${f.name}">${title}</a></div>`;
         }).join('');
       })
